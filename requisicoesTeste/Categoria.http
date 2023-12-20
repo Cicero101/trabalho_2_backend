@@ -1,0 +1,28 @@
+GET HTTP://localhost:8080/api/categorias
+
+###
+
+GET HTTP://localhost:8080/api/categorias/15
+
+###
+
+POST  HTTP://localhost:8080/api/categorias
+Content-Type: application/json
+
+{
+    "nome": "Matematica",
+    "observacao": "Livro Academico"
+}
+###
+
+###
+PUT HTTP://localhost:8080/api/categorias/1
+Content-Type: application/json
+
+{
+    "nome": "",
+    "observacao": ""
+}
+
+###
+DELETE  HTTP://localhost:8080/api/categorias/7

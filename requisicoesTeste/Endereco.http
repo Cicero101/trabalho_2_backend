@@ -1,0 +1,42 @@
+GET HTTP://localhost:8080/api/enderecos
+
+###
+
+GET HTTP://localhost:8080/api/enderecos/1
+
+###
+POST HTTP://localhost:8080/api/enderecos
+Content-Type: application/json
+
+{
+    "cep":"26900-000",
+    "rua":"Travessa Cipriano Rezendes",
+    "numero":273,
+    "bairro":"Alto da Boa Vista",
+    "complemento":"Casa 1",
+    "cidade":"Miguel Pereira",
+    "estado":"RJ",
+    "cliente": {
+        "id":6
+    }
+}
+
+###
+PUT HTTP://localhost:8080/api/enderecos/4
+Content-Type: application/json
+
+{
+    "cep":"26900-000",
+    "rua":"Travessa Cipriano Rezendes",
+    "numero":273,
+    "bairro":"Alto da Boa Vista",
+    "complemento":"Casa 1",
+    "cidade":"Miguel Pereira",
+    "estado":"RJ",
+    "cliente": {
+        "id":6
+    }
+}
+
+###
+DELETE  HTTP://localhost:8080/api/enderecos/2

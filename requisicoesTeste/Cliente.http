@@ -1,0 +1,30 @@
+GET HTTP://localhost:8080/api/clientes
+
+###
+
+GET HTTP://localhost:8080/api/clientes/12
+
+###
+
+POST  HTTP://localhost:8080/api/clientes
+Content-Type: application/json
+
+{
+    "nome": "Ramiro Marques",
+    "email": "ramiro@gmail.com",
+    "telefone": "(24)45684-7981"
+
+}
+
+###
+PUT HTTP://localhost:8080/api/clientes/2
+Content-Type: application/json
+
+{
+    "nome": "Fernanda Maia",
+    "email": "fernanda@gmail.com",
+    "telefone": "(24)98765-4321"
+}
+
+###
+DELETE  HTTP://localhost:8080/api/clientes/2

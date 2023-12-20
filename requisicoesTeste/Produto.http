@@ -1,0 +1,34 @@
+GET HTTP://localhost:8080/api/produtos
+
+###
+
+GET HTTP://localhost:8080/api/produtos/2
+
+###
+POST HTTP://localhost:8080/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "Fundamentos da Física - Mecânica",
+    "descricao": "Editora LTC",
+    "preco": 180.92,
+    "categoria": {
+        "id":4
+    }
+}
+
+###
+PUT HTTP://localhost:8080/api/produtos/2
+Content-Type: application/json
+
+{
+    "nome": "Física Conceitual",
+    "descricao": "Editora Bookman",
+    "preco": 90.72,
+    "categoria": {
+        "id":4
+    }
+}
+
+###
+DELETE  HTTP://localhost:8080/api/produtos/2
